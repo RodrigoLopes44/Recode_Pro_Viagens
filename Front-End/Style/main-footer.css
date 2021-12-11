@@ -1,0 +1,13 @@
+.main-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #CAEBF2;
+    padding-top: 20px;
+    padding-bottom: 0px;
+}
+
+.main-footer .info {
+    align-content: center;
+}
