@@ -6,6 +6,8 @@
     background-color: #CAEBF2;
     padding-top: 20px;
     padding-bottom: 0px;
+    height: auto;
+    width: 100%;
 }
 
 .main-footer .info {
