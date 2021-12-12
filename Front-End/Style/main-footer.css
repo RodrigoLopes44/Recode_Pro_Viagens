@@ -1,8 +1,15 @@
+header {
+    font-family: 'Candara';
+}
+
+body {
+    font-family: 'Candara';
+}
+
 .main-footer {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    font-family: 'Courier New', Courier, monospace;
+    align-items: center;    
     background-color: #CAEBF2;
     padding-top: 20px;
     padding-bottom: 0px;
