@@ -1,104 +1,212 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Recode Viagens™</title>
 
-    <link rel="stylesheet" href="Style/main-footer.css">
-</head>
+    <style>
+      * {
+        font-family: "Candara";
+        margin: 0;
+        padding: 0;
+      }
 
-<!-- cabeçalho do site -->
+      form {
+        margin: 15px;
+      }
 
-<header>
-    <table width="100%" style="background-color: #CAEBF2;">
-        <tr>
-            <td>
-                <a href="https://www.recodepro.org.br">
-                    <img width="25%" src="Images/Lugares/logo-recode-pro-site.png" alt="Recode Viagens">
-                </a>
-            </td>
+      .nav-menu {
+        color: #76323f;
+        background-color: #caebf2;
+        width: 100%;
+        font-size: 18px;
+      }
 
-            <td>
-                <a style="color: #76323f; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"
-                    href="index.html">Página Inicial</a>
-            </td>
+      #logo-nav-menu {
+        width: 25%;
+      }
 
-            <td>
-                <a style="color: #76323f; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"
-                    href="viagens.html">Nossas Viagens</a>
-            </td>
+      .form-area {
+        border-style: none;
+      }
 
-            <td>
-                <a style="color: #76323f; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"
-                    href="promocoes.html">Promoções Ativas</a>
-            </td>
+      .form-area,
+      #nome,
+      #email,
+      #telefone,
+      #msg-contact {
+        border-radius: 8px;
+        padding: 5px;
+        width: 400px;
+        font-size: 18px;
+      }
 
-            <td>
-                <a style="color: #76323f; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"
-                    href="contato.html">Contato</a>
-            </td>
-        </tr>
+      #submit {
+        border-radius: 5px;
+        padding: 5px 10px 5px 10px;
+      }
+
+      .main-footer {
+        position: static;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #caebf2;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        height: auto;
+        width: auto;
+      }
+
+      .main-footer #info {
+        align-content: center;
+      }
+    </style>
+
+    <!-- <link rel="stylesheet" href="Style/main-footer.css" /> -->
+  </head>
+
+  <!-- cabeçalho do site -->
+
+  <header>
+    <table class="nav-menu">
+      <tr>
+        <td>
+          <a href="https://www.recodepro.org.br">
+            <img
+              id="logo-nav-menu"
+              src="Images/Lugares/logo-recode-pro-site.png"
+              alt="Recode Viagens"
+              tabindex="1"
+            />
+          </a>
+        </td>
+
+        <td>
+          <a href="index.html"> Página Inicial </a>
+        </td>
+
+        <td>
+          <a href="viagens.html">Nossas Viagens</a>
+        </td>
+
+        <td>
+          <a href="promocoes.html">Promoções Ativas</a>
+        </td>
+
+        <td>
+          <a href="contato.html">Contato</a>
+        </td>
+      </tr>
     </table>
+  </header>
 
-</header>
+  <!-- conteúdo principal do site -->
 
-<!-- conteúdo principal do site -->
-
-<body>
-    <h2>
-        Olá, viajante. Desejar nos contactar?
-        <br><br>
-        Preencha os dados abaixo que em breve responderemos!
-    </h2>
-
-    <br><br>
-
+  <body>
     <form>
-        <h4> Nome: </h4>
-        <input type="text" style="width: 400px;">
-        
-        <h4> Telefone: </h4>
-        <input type="tel" style="width: 400px;">
+      <div class="body-header">
+        <h2>
+          Olá, viajante. Desejar nos contactar?
 
-        <h4> E-mail: </h4>
-        <input type="email" style="width: 400px;">
+          <br /><br />
 
-        <h4> Mensagem: </h4>
-        <textarea name="msg_contact" id="txt_msg" cols="50" rows="10" style="width: 400px;"></textarea>
-        <br><br>
+          Preencha os dados abaixo que em breve responderemos!
+        </h2>
+      </div>
+      <br />
+      <fieldset class="form-area">
+        <div class="name-area">
+          <label for="nome"> <strong> Nome: </strong></label>
+          <input type="text" name="nome" id="nome" required />
+        </div>
 
-        <button type="submit"> Enviar </button>
+        <br />
 
-        <h5>Adição futura.</h5>
+        <div class="tel-area">
+          <label for="telefone"><strong> Telefone:</strong></label>
+          <input type="tel" name="telefone" id="telefone" required />
+        </div>
+
+        <br />
+
+        <div class="email-area">
+          <label for="email"><strong>E-mail:</strong></label>
+          <input type="email" name="email" id="email" required />
+        </div>
+
+        <br />
+
+        <div class="contact-choices">
+          <label><strong>Deseja ser contactado por qual meio?</strong></label>
+
+          <br />
+
+          <label>
+            <input
+              type="checkbox"
+              name="formacontato"
+              value="whatsapp"
+              checked
+            />
+            WhatsApp
+          </label>
+
+          <br />
+
+          <label>
+            <input type="checkbox" name="formacontato2" value="email" /> E-mail
+          </label>
+        </div>
+
+        <br />
+
+        <div class="msg-area">
+          <label for="msg-contact"><strong>Mensagem:</strong></label>
+
+          <br />
+
+          <textarea
+            name="msg-contact"
+            id="msg-contact"
+            cols="50"
+            rows="10"
+          ></textarea>
+          <br /><br />
+
+          <button type="submit" id="submit"><strong>Enviar</strong></button>
+        </div>
+      </fieldset>
     </form>
 
-    <br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br /><br /><br />
+  </body>
 
-    
+  <!-- rodapé do site -->
 
-</body>
-
-<!-- rodapé do site -->
-
-<footer class="main-footer">
-
-    <a class="logo" href="https://www.recodepro.org.br">
-        <img src="Images/Lugares/logo-recode-pro-site.png" alt="Recode Logo" width="150px">
+  <footer class="main-footer">
+    <a id="logo" href="https://www.recodepro.org.br">
+      <img
+        src="Images/Lugares/logo-recode-pro-site.png"
+        alt="Recode Logo"
+        width="150px"
+      />
     </a>
 
-    <h4 align="center" class="info">
-        &copy;
-        Recode Pro Viagens
-        
-        <br>
-        
-        Todos os direitos reservados.</h4>
+    <h4 align="center" id="info">
+      &copy; Recode Pro Viagens
 
-</footer>
+      <br />
 
+      Todos os direitos reservados.
+    </h4>
+  </footer>
 </html>
