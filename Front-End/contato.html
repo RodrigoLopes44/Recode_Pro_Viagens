@@ -12,21 +12,60 @@
         font-family: "Candara";
         margin: 0;
         padding: 0;
+        box-sizing: border-box;
+      }
+
+      @keyframes animacao {
+        from {
+          width: 0%;
+          font-size: 0px;
+          opacity: 0;
+        }
+        to {
+          width: 100%;
+          font-size: 18px;
+          opacity: 1;
+        }
+      }
+
+      header {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        background-color: #caebf2;
+        font-size: 18px;
+        padding: 10px 5%;
+        animation-name: animacao;
+        animation-duration: 0.8s;
+      }
+
+      .logo {
+        margin-right: auto;
+      }
+      nav {
+        font-weight: 678;
+      }
+      nav .nav-options {
+        list-style: none;
+      }
+
+      .nav-options li {
+        display: inline-block;
+        padding: 0px 20px;
+        justify-content: right;
+      }
+
+      .nav-options li a {
+        transition: all 0.5s ease 0.2s;
+        text-decoration: none;
+      }
+
+      .nav-options li a:hover {
+        color: rgb(223, 136, 223);
       }
 
       form {
         margin: 15px;
-      }
-
-      .nav-menu {
-        color: #76323f;
-        background-color: #caebf2;
-        width: 100%;
-        font-size: 18px;
-      }
-
-      #logo-nav-menu {
-        width: 25%;
       }
 
       .form-area {
@@ -89,36 +128,30 @@
   <!-- cabeçalho do site -->
 
   <header>
-    <table class="nav-menu">
-      <tr>
-        <td>
-          <a href="https://www.recodepro.org.br">
-            <img
-              id="logo-nav-menu"
-              src="Images/Lugares/logo-recode-pro-site.png"
-              alt="Recode Viagens"
-              tabindex="1"
-            />
-          </a>
-        </td>
+    <img
+      class="logo"
+      src="Images/Logos/Recode Tourism.svg"
+      alt="Recode Tourism"
+    />
 
-        <td>
-          <a href="index.html"> Página Inicial </a>
-        </td>
+    <nav>
+      <ul class="nav-options">
+        <li>
+          <a href="index.html">Página Inicial</a>
+        </li>
+        <li>
+          <a href="viagens.html">Catálogo</a>
+        </li>
 
-        <td>
-          <a href="viagens.html">Nossas Viagens</a>
-        </td>
+        <li>
+          <a href="promocoes.html">Promoções</a>
+        </li>
 
-        <td>
-          <a href="promocoes.html">Promoções Ativas</a>
-        </td>
-
-        <td>
-          <a href="contato.html">Contato</a>
-        </td>
-      </tr>
-    </table>
+        <li>
+          <a href="contato.html">Fale Conosco</a>
+        </li>
+      </ul>
+    </nav>
   </header>
 
   <!-- conteúdo principal do site -->
