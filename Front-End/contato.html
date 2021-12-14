@@ -44,9 +44,25 @@
         font-size: 18px;
       }
 
+      #nome:focus,
+      #email:focus,
+      #telefone:focus,
+      #msg-contact:focus {
+        background-color: #caebf2;
+      }
+
       #submit {
         border-radius: 5px;
-        padding: 5px 10px 5px 10px;
+        padding: 7px 20px 7px 20px;
+        background-color: #caebf2;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+      }
+
+      #submit:hover {
+        background-color: #ffffff;
+        box-shadow: inset 2px 2px 3px rgba(0, 0, 0, 0.2);
+        text-shadow: none;
       }
 
       .main-footer {
@@ -111,7 +127,7 @@
     <form>
       <div class="body-header">
         <h2>
-          Olá, viajante. Desejar nos contactar?
+          Olá, viajante. Deseja nos contactar?
 
           <br /><br />
 
@@ -151,6 +167,7 @@
               type="checkbox"
               name="formacontato"
               value="whatsapp"
+              id="chk-wpp"
               checked
             />
             WhatsApp
@@ -159,7 +176,13 @@
           <br />
 
           <label>
-            <input type="checkbox" name="formacontato2" value="email" /> E-mail
+            <input
+              type="checkbox"
+              name="formacontato2"
+              value="email"
+              id="chk-email"
+            />
+            E-mail
           </label>
         </div>
 
@@ -182,10 +205,6 @@
         </div>
       </fieldset>
     </form>
-
-    <br /><br /><br /><br /><br /><br /><br /><br /><br />
-    <br /><br /><br /><br /><br /><br /><br /><br /><br />
-    <br /><br /><br /><br /><br /><br /><br /><br /><br />
   </body>
 
   <!-- rodapé do site -->
