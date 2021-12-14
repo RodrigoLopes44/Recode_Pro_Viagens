@@ -1,68 +1,109 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Recode Viagens™</title>
 
-    <link rel="stylesheet" href="Style/main-footer.css">
+    <style>
+      * {
+        font-family: "Candara";
+        margin: 0;
+        padding: 0;
+      }
 
-</head>
+      .nav-menu {
+        color: #76323f;
+        background-color: #caebf2;
+        width: 100%;
+        font-size: 18px;
+      }
 
-<!-- cabeçalho do site -->
+      #logo-nav-menu {
+        width: 25%;
+      }
 
-<header>
-    <table width="100%" style="background-color: #CAEBF2;">
-        <tr>
-            <td>
-                <a href="https://www.recodepro.org.br">
-                    <img width="25%" src="Images/Lugares/logo-recode-pro-site.png" alt="Recode Viagens">
-                </a>
-            </td>
+      .main-footer {
+        position: static;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #caebf2;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        height: auto;
+        width: auto;
+      }
 
-            <td>
-                <a style="color: #76323f; font-family: 'Lucida ', 'Lucida  Regular', 'Lucida Grande', 'Lucida  Unicode', Geneva, Verdana, sans-serif;"
-                    href="index.html">Página Inicial</a>
-            </td>
+      .main-footer #info {
+        align-content: center;
+      }
+    </style>
+  </head>
 
-            <td>
-                <a style="color: #76323f; font-family: 'Lucida ', 'Lucida  Regular', 'Lucida Grande', 'Lucida  Unicode', Geneva, Verdana, sans-serif;"
-                    href="viagens.html">Nossas Viagens</a>
-            </td>
+  <!-- cabeçalho do site -->
 
-            <td>
-                <a style="color: #76323f; font-family: 'Lucida ', 'Lucida  Regular', 'Lucida Grande', 'Lucida  Unicode', Geneva, Verdana, sans-serif;"
-                    href="promocoes.html">Promoções Ativas</a>
-            </td>
+  <header>
+    <table class="nav-menu">
+      <tr>
+        <td>
+          <a href="https://www.recodepro.org.br">
+            <img
+              id="logo-nav-menu"
+              src="Images/Lugares/logo-recode-pro-site.png"
+              alt="Recode Viagens"
+              tabindex="1"
+            />
+          </a>
+        </td>
 
-            <td>
-                <a style="color: #76323f; font-family: 'Lucida ', 'Lucida  Regular', 'Lucida Grande', 'Lucida  Unicode', Geneva, Verdana, sans-serif;"
-                    href="contato.html">Contato</a>
-            </td>
-        </tr>
+        <td>
+          <a href="index.html"> Página Inicial </a>
+        </td>
+
+        <td>
+          <a href="viagens.html">Nossas Viagens</a>
+        </td>
+
+        <td>
+          <a href="promocoes.html">Promoções Ativas</a>
+        </td>
+
+        <td>
+          <a href="contato.html">Contato</a>
+        </td>
+      </tr>
     </table>
+  </header>
 
-</header>
+  <!-- conteúdo principal do site -->
 
-<!-- conteúdo principal do site -->
+  <body>
+    <h2>Olá, mundo.</h2>
+  </body>
 
-<body>
-    <h2>
-        Olá, mundo.
-    </h2>
+  <!-- rodapé do site -->
 
+  <footer class="main-footer">
+    <a id="logo" href="https://www.recodepro.org.br">
+      <img
+        src="Images/Lugares/logo-recode-pro-site.png"
+        alt="Recode Logo"
+        width="150px"
+      />
+    </a>
 
+    <h4 align="center" id="info">
+      &copy; Recode Pro Viagens
 
+      <br />
 
-
-</body>
-
-<!-- rodapé do site -->
-
-<footer class="main-footer">
-
-</footer>
-
+      Todos os direitos reservados.
+    </h4>
+  </footer>
 </html>

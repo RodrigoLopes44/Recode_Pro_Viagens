@@ -1,186 +1,232 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Recode Viagens™</title>
 
-    <link rel="stylesheet" href="Style/main-footer.css">
+    <style>
+      * {
+        font-family: "Candara";
+        margin: 0;
+        padding: 0;
+      }
 
-</head>
+      .nav-menu {
+        color: #76323f;
+        background-color: #caebf2;
+        width: 100%;
+        font-size: 18px;
+      }
 
-<!-- cabeçalho do site -->
+      #logo-nav-menu {
+        width: 25%;
+      }
 
-<header>
-    <table width="100%" style="background-color: #CAEBF2;">
-        <tr>
-            <td>
-                <a href="https://www.recodepro.org.br">
-                    <img width="25%" src="Images/Lugares/logo-recode-pro-site.png" alt="Recode Viagens">
-                </a>
-            </td>
+      .main-footer {
+        position: static;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #caebf2;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        height: auto;
+        width: auto;
+      }
 
-            <td>
-                <a style="color: #76323f; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"
-                    href="index.html">Página Inicial</a>
-            </td>
+      .main-footer #info {
+        align-content: center;
+      }
+    </style>
+  </head>
 
-            <td>
-                <a style="color: #76323f; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"
-                    href="viagens.html">Nossas Viagens</a>
-            </td>
+  <!-- cabeçalho do site -->
 
-            <td>
-                <a style="color: #76323f; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"
-                    href="promocoes.html">Promoções Ativas</a>
-            </td>
+  <header>
+    <table class="nav-menu">
+      <tr>
+        <td>
+          <a href="https://www.recodepro.org.br">
+            <img
+              id="logo-nav-menu"
+              src="Images/Lugares/logo-recode-pro-site.png"
+              alt="Recode Viagens"
+              tabindex="1"
+            />
+          </a>
+        </td>
 
-            <td>
-                <a style="color: #76323f; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"
-                    href="contato.html">Contato</a>
-            </td>
-        </tr>
+        <td>
+          <a href="index.html"> Página Inicial </a>
+        </td>
+
+        <td>
+          <a href="viagens.html">Nossas Viagens</a>
+        </td>
+
+        <td>
+          <a href="promocoes.html">Promoções Ativas</a>
+        </td>
+
+        <td>
+          <a href="contato.html">Contato</a>
+        </td>
+      </tr>
     </table>
+  </header>
 
-</header>
+  <!-- conteúdo principal do site -->
 
-<!-- conteúdo principal do site -->
-
-<body>
+  <body>
     <h2 align="center">
-        Somente aqui na Recode Pro Viagens você encontra o melhor destino que um programador pode querer visitar!
-        <hr>
+      Somente aqui na Recode Pro Viagens você encontra o melhor destino que um
+      programador pode querer visitar!
+      <hr />
     </h2>
 
     <table border="0" cellpadding="20px">
-        <tr>
-            <td rowspan="" width="20%" valign="top">
-                <h3>
-                    <u>Escolha por Estado:</u>
-                    <ul>
-                        <li>
-                            Rio de Janeiro (2)
-                        </li>
+      <tr>
+        <td rowspan="" width="20%" valign="top">
+          <h3>
+            <u>Escolha por Estado:</u>
+            <ul>
+              <li>Rio de Janeiro (2)</li>
 
-                        <li>
-                            São Paulo (3)
-                        </li>
+              <li>São Paulo (3)</li>
 
-                        <li>
-                            Minas Gerais (1)
-                        </li>
+              <li>Minas Gerais (1)</li>
 
-                        <li>
-                            Bahia (1)
-                        </li>
+              <li>Bahia (1)</li>
 
-                        <li>
-                            Mais opções em breve!
-                        </li>
-                    </ul>
-                </h3>
-            </td>
-        </tr>
-        <tr>
-            <td id="RJ-1" width="20%" align="center" valign="bottom">
-                <img src="./Images/Lugares/fernando-de-noronha-pousada.jpg" alt="Fernando de Noronha - RJ"
-                    width="500px">
-                <br>
-                Fernando de Noronha (Pacote para 2 pessoas)*
-                <hr>
-                <strike>R$ 1950</strike>
-                <font color="red"> R$ 1300 </font>
+              <li>Mais opções em breve!</li>
+            </ul>
+          </h3>
+        </td>
+      </tr>
+      <tr>
+        <td id="RJ-1" width="20%" align="center" valign="bottom">
+          <img
+            src="./Images/Lugares/fernando-de-noronha-pousada.jpg"
+            alt="Fernando de Noronha - RJ"
+            width="500px"
+          />
+          <br />
+          Fernando de Noronha (Pacote para 2 pessoas)*
+          <hr />
+          <strike>R$ 1950</strike>
+          <font color="red"> R$ 1300 </font>
+        </td>
 
-            </td>
-
-            <td id="RJ-2" width="20%" align="center" valign="bottom">
-                <img src="./Images/Lugares/ilha-grande-pousada.jpg" alt="Ilha Grande - RJ" width="500px">
-                <br>
-                Ilha Grande (Pacote para 4 pessoas)*
-                <hr>
-                <strike>R$ 2050</strike>
-                <font color="red"> R$ 1890 </font>
-        <tr>
+        <td id="RJ-2" width="20%" align="center" valign="bottom">
+          <img
+            src="./Images/Lugares/ilha-grande-pousada.jpg"
+            alt="Ilha Grande - RJ"
+            width="500px"
+          />
+          <br />
+          Ilha Grande (Pacote para 4 pessoas)*
+          <hr />
+          <strike>R$ 2050</strike>
+          <font color="red"> R$ 1890 </font>
+          <tr>
             <td></td>
-        </tr>
+          </tr>
         </td>
 
         <td id="SP-1" width="20%" align="center" valign="bottom">
-            <img src="./Images/Lugares/pousada-caraguatatuba-SP.jpg" alt="Caraguatatuba-SP" width="500px">
-            <br>
-            Caraguatatuba (Pacote para 1 pessoa)*
-            <hr>
-            <strike>R$ 1000 </strike>
-            <font color="red"> R$ 850 </font>
+          <img
+            src="./Images/Lugares/pousada-caraguatatuba-SP.jpg"
+            alt="Caraguatatuba-SP"
+            width="500px"
+          />
+          <br />
+          Caraguatatuba (Pacote para 1 pessoa)*
+          <hr />
+          <strike>R$ 1000 </strike>
+          <font color="red"> R$ 850 </font>
         </td>
 
         <td id="SP-2" width="20%" align="center" valign="bottom">
-            <img src="Images/Lugares/pousada-higienopolis-SP.jpg" alt="Higienopolis-SP" width="500px">
-            <br>
-            Higienópolis (Pacote para 2 pessoas)*
-            <hr>
-            <strike>R$ 2150</strike>
-            <font color="red"> R$ 1900 </font>
+          <img
+            src="Images/Lugares/pousada-higienopolis-SP.jpg"
+            alt="Higienopolis-SP"
+            width="500px"
+          />
+          <br />
+          Higienópolis (Pacote para 2 pessoas)*
+          <hr />
+          <strike>R$ 2150</strike>
+          <font color="red"> R$ 1900 </font>
         </td>
 
         <td id="SP-3" width="20%" align="center" valign="bottom">
-            <img src="Images/Lugares/pousada-vila-olimpia-SP.jpg" alt="Vila Olimpia - SP" width="500px">
-            <br>
-            Vila Olímpia (Pacote para 2 ou mais pessoas)*
-            <hr>
-            <strike>R$ 4000</strike>
-            <font color="red"> R$ 3400 </font>
-            <tr>
-                <td></td>
-            </tr>
-
+          <img
+            src="Images/Lugares/pousada-vila-olimpia-SP.jpg"
+            alt="Vila Olimpia - SP"
+            width="500px"
+          />
+          <br />
+          Vila Olímpia (Pacote para 2 ou mais pessoas)*
+          <hr />
+          <strike>R$ 4000</strike>
+          <font color="red"> R$ 3400 </font>
+          <tr>
+            <td></td>
+          </tr>
         </td>
 
         <td id="MG-1" width="20%" align="center" valign="bottom">
-            <img src="Images/Lugares/pousada-pocos-de-caldas-MG.jpg" alt="Poços de Caldas - MG" width="500px">
-            <br>
-            Poços de Caldas (Pacote para mais de 3 pessoas)*
-            <hr>
-            <strike>R$ 2600</strike>
-            <font color="red"> R$ 2400 </font>
-
+          <img
+            src="Images/Lugares/pousada-pocos-de-caldas-MG.jpg"
+            alt="Poços de Caldas - MG"
+            width="500px"
+          />
+          <br />
+          Poços de Caldas (Pacote para mais de 3 pessoas)*
+          <hr />
+          <strike>R$ 2600</strike>
+          <font color="red"> R$ 2400 </font>
         </td>
 
         <td id="BA-1" width="20%" align="center" valign="bottom">
-            <img src="Images/Lugares/pousada-ilheus-BA.jpg" alt="Ilhéus - BA" width="500px">
-            <br>
-            Ilhéus (Pacote para 2 pessoas)*
-            <hr>
-            <strike>R$ 1200</strike>
-            <font color="red"> R$ 1000 </font>
+          <img
+            src="Images/Lugares/pousada-ilheus-BA.jpg"
+            alt="Ilhéus - BA"
+            width="500px"
+          />
+          <br />
+          Ilhéus (Pacote para 2 pessoas)*
+          <hr />
+          <strike>R$ 1200</strike>
+          <font color="red"> R$ 1000 </font>
         </td>
-        </tr>
+      </tr>
     </table>
+  </body>
 
+  <!-- rodapé do site -->
 
-</body>
-
-<!-- rodapé do site -->
-
-<footer class="main-footer">
-
-    <a class="logo" href="https://www.recodepro.org.br">
-        <img src="Images/Lugares/logo-recode-pro-site.png" alt="Recode Logo" width="150px">
+  <footer class="main-footer">
+    <a id="logo" href="https://www.recodepro.org.br">
+      <img
+        src="Images/Lugares/logo-recode-pro-site.png"
+        alt="Recode Logo"
+        width="150px"
+      />
     </a>
 
-    <h4 align="center" class="info">
-        &copy;
-        Recode Pro Viagens
-        
-        <br>
-        
-        Todos os direitos reservados.</h4>
+    <h4 align="center" id="info">
+      &copy; Recode Pro Viagens
 
-</footer>
+      <br />
 
-
-
+      Todos os direitos reservados.
+    </h4>
+  </footer>
 </html>
