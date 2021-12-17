@@ -65,6 +65,77 @@
         opacity: 0.8;
       }
 
+      /* Style do Body */
+
+      .main {
+        display: inline-flex;
+        padding: 1% 0% 1% 0%;
+        width: 100%;
+        height: 100%;
+      }
+
+      /* = Style do h1 inicial */
+      #title-header {
+        margin: 1% 0% 1% 0%;
+        text-align: center;
+      }
+
+      #title-header hr {
+        border: 0;
+        height: 2px;
+        background-image: linear-gradient(
+          to right,
+          transparent,
+          #999,
+          transparent
+        );
+      }
+      
+      /* = Fim do Style do h1 inicial */
+
+      .container {
+        display: inline-flex;
+      }
+      .container .menu-lateral {
+        width: 50%;        
+      }
+
+      .container .menu-lateral h4 {
+        background-color: #caebf2;
+        color: blueviolet;
+        font-size: 20px;        
+      }
+      .container .menu-lateral .states {
+        list-style: none;
+        padding: 2%;
+        font-size: 18px;
+        background-color: blueviolet;
+        color: #caebf2;        
+        height: 100%;
+      }
+      .container .menu-lateral .states li {
+        padding: 4px;
+        margin-left: 10px;
+        cursor: pointer;
+      }      
+
+      .trip-options {
+        display: inline-block;
+      }
+
+      .trip {
+        display: inline-block;
+        text-align: center;
+        padding: 0% 0% 1% 0%;
+      }
+      .trip img {
+        width: 70%;
+      }
+
+      .trip-name {
+        font-weight: 600;
+      }
+
       .main-footer {
         position: static;
         bottom: 0;
@@ -86,181 +157,139 @@
     </style>
   </head>
 
-  <!-- cabeçalho do site -->
-
-  <header>
-    <img
-      class="logo"
-      src="Images/Logos/Recode Tourism.svg"
-      alt="Recode Tourism"
-    />
-
-    <nav>
-      <ul class="nav-options">
-        <li>
-          <a href="index.html">Página Inicial</a>
-        </li>
-        <li>
-          <a href="viagens.html">Catálogo</a>
-        </li>
-
-        <li>
-          <a href="promocoes.html">Promoções</a>
-        </li>
-
-        <li>
-          <a href="contato.html">Fale Conosco</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-
   <!-- conteúdo principal do site -->
-
   <body>
-    <h2 align="center">
-      Somente aqui na Recode Pro Viagens você encontra o melhor destino que um
-      programador pode querer visitar!
+    <!-- cabeçalho do site -->
+    <header>
+      <img
+        class="logo"
+        src="Images/Logos/Recode Tourism.svg"
+        alt="Recode Tourism"
+      />
+
+      <nav>
+        <ul class="nav-options">
+          <li>
+            <a href="index.html">Página Inicial</a>
+          </li>
+          <li>
+            <a href="viagens.html">Catálogo</a>
+          </li>
+
+          <li>
+            <a href="promocoes.html">Promoções</a>
+          </li>
+
+          <li>
+            <a href="contato.html">Fale Conosco</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Cabeçalho inicial da página -->
+    <div id="title-header">
+      <h2>
+        Somente aqui na Recode Pro Viagens você encontra o melhor destino que um
+        programador pode querer visitar!
+      </h2>
+      <br />
       <hr />
-    </h2>
+    </div>
 
-    <table border="0" cellpadding="20px">
-      <tr>
-        <td rowspan="" width="20%" valign="top">
-          <h3>
-            <u>Escolha por Estado:</u>
-            <ul>
-              <li>Rio de Janeiro (2)</li>
+    <section class="main">
+      <div class="container">
+        <div class="menu-lateral">
+          <h4>Estados:</h4>
+          <ul class="states">
+            <li>Rio de Janeiro (2)</li>
 
-              <li>São Paulo (3)</li>
+            <li>São Paulo (3)</li>
 
-              <li>Minas Gerais (1)</li>
+            <li>Minas Gerais (1)</li>
 
-              <li>Bahia (1)</li>
+            <li>Bahia (1)</li>
 
-              <li>Mais opções em breve!</li>
-            </ul>
-          </h3>
-        </td>
-      </tr>
-      <tr>
-        <td id="RJ-1" width="20%" align="center" valign="bottom">
+            <hr />
+
+            Mais opções em breve!
+          </ul>
+        </div>
+
+        <div class="trip-options">
+          <div class="trip">
           <img
-            src="./Images/Lugares/fernando-de-noronha-pousada.jpg"
-            alt="Fernando de Noronha - RJ"
-            width="500px"
+            src="Images/Lugares/fernando-de-noronha-pousada.svg"
+            alt="Fernando de Noronha-RJ"
           />
-          <br />
-          Fernando de Noronha (Pacote para 2 pessoas)*
-          <hr />
-          <strike>R$ 1950</strike>
-          <font color="red"> R$ 1300 </font>
-        </td>
-
-        <td id="RJ-2" width="20%" align="center" valign="bottom">
+          <p class="trip-name">Fernando de Noronha - RJ</p>
+          <p>Preços a partir de R$ 500</p>
+        </div>
+        <div class="trip">
           <img
-            src="./Images/Lugares/ilha-grande-pousada.jpg"
-            alt="Ilha Grande - RJ"
-            width="500px"
+            src="Images/Lugares/ilha-grande-pousada.svg"
+            alt="Ilha Grande-RJ"
           />
-          <br />
-          Ilha Grande (Pacote para 4 pessoas)*
-          <hr />
-          <strike>R$ 2050</strike>
-          <font color="red"> R$ 1890 </font>
-          <tr>
-            <td></td>
-          </tr>
-        </td>
-
-        <td id="SP-1" width="20%" align="center" valign="bottom">
+          <p class="trip-name">Ilha Grande - RJ</p>
+          <p>Preços a partir de R$ 300</p>
+        </div>
+        <div class="trip">
           <img
-            src="./Images/Lugares/pousada-caraguatatuba-SP.jpg"
+            src="Images/Lugares/pousada-caraguatatuba-SP.svg"
             alt="Caraguatatuba-SP"
-            width="500px"
           />
-          <br />
-          Caraguatatuba (Pacote para 1 pessoa)*
-          <hr />
-          <strike>R$ 1000 </strike>
-          <font color="red"> R$ 850 </font>
-        </td>
-
-        <td id="SP-2" width="20%" align="center" valign="bottom">
+          <p class="trip-name">Caraguatatuba - SP</p>
+          <p>Preços a partir de R$ 200</p>
+        </div>
+        <div class="trip">
           <img
-            src="Images/Lugares/pousada-higienopolis-SP.jpg"
-            alt="Higienopolis-SP"
-            width="500px"
+            src="Images/Lugares/pousada-higienopolis-SP.svg"
+            alt="Higienópolis-SP"
           />
-          <br />
-          Higienópolis (Pacote para 2 pessoas)*
-          <hr />
-          <strike>R$ 2150</strike>
-          <font color="red"> R$ 1900 </font>
-        </td>
-
-        <td id="SP-3" width="20%" align="center" valign="bottom">
+          <p class="trip-name">Higienópolis - SP</p>
+          <p>Preços a partir de R$ 800</p>
+        </div>
+        <div class="trip">
+          <img src="Images/Lugares/pousada-ilheus-BA.svg" alt="Ilhéus-BA" />
+          <p class="trip-name">Ilhéus - BA</p>
+          <p>Preços a partir de R$ 250</p>
+        </div>
+        <div class="trip">
           <img
-            src="Images/Lugares/pousada-vila-olimpia-SP.jpg"
-            alt="Vila Olimpia - SP"
-            width="500px"
+            src="Images/Lugares/pousada-vila-olimpia-SP.svg"
+            alt="Vila Olímpia-SP"
           />
-          <br />
-          Vila Olímpia (Pacote para 2 ou mais pessoas)*
-          <hr />
-          <strike>R$ 4000</strike>
-          <font color="red"> R$ 3400 </font>
-          <tr>
-            <td></td>
-          </tr>
-        </td>
-
-        <td id="MG-1" width="20%" align="center" valign="bottom">
+          <p class="trip-name">Vila Olímpia - SP</p>
+          <p>Preços a partir de R$ 500</p>
+        </div>
+        <div class="trip">
           <img
-            src="Images/Lugares/pousada-pocos-de-caldas-MG.jpg"
-            alt="Poços de Caldas - MG"
-            width="500px"
+            src="Images/Lugares/pousada-pocos-de-caldas-MG.svg"
+            alt="Poços de Caldas-MG"
           />
-          <br />
-          Poços de Caldas (Pacote para mais de 3 pessoas)*
-          <hr />
-          <strike>R$ 2600</strike>
-          <font color="red"> R$ 2400 </font>
-        </td>
+          <p class="trip-name">Poços de Caldas - MG</p>
+          <p>Preços a partir de R$ 500</p>
+        </div>
+      </div>
+    </section>
 
-        <td id="BA-1" width="20%" align="center" valign="bottom">
-          <img
-            src="Images/Lugares/pousada-ilheus-BA.jpg"
-            alt="Ilhéus - BA"
-            width="500px"
-          />
-          <br />
-          Ilhéus (Pacote para 2 pessoas)*
-          <hr />
-          <strike>R$ 1200</strike>
-          <font color="red"> R$ 1000 </font>
-        </td>
-      </tr>
-    </table>
+    <footer class="main-footer">
+      <a id="logo" href="https://www.recodepro.org.br">
+        <img
+          src="Images/Logos/logo-recode-pro-site.png"
+          alt="Recode Logo"
+          width="150px"
+        />
+      </a>
+
+      <h4 align="center" id="info">
+        &copy; Recode Pro Viagens
+
+        <br />
+
+        Todos os direitos reservados.
+      </h4>
+    </footer>
   </body>
 
   <!-- rodapé do site -->
-
-  <footer class="main-footer">
-    <a id="logo" href="https://www.recodepro.org.br">
-      <img
-        src="Images/Logos/logo-recode-pro-site.png"
-        alt="Recode Logo"
-        width="150px"
-      />
-    </a>
-
-    <h4 align="center" id="info">
-      &copy; Recode Pro Viagens
-
-      <br />
-
-      Todos os direitos reservados.
-    </h4>
-  </footer>
 </html>
