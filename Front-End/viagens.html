@@ -97,7 +97,8 @@
         display: inline-flex;
       }
       .container .menu-lateral {
-        width: 50%;        
+        width: 50%;
+        height: auto;        
       }
 
       .container .menu-lateral h4 {
@@ -105,6 +106,7 @@
         color: blueviolet;
         font-size: 20px;        
       }
+
       .container .menu-lateral .states {
         list-style: none;
         padding: 2%;
@@ -113,6 +115,7 @@
         color: #caebf2;        
         height: 100%;
       }
+
       .container .menu-lateral .states li {
         padding: 4px;
         margin-left: 10px;
@@ -121,15 +124,30 @@
 
       .trip-options {
         display: inline-block;
+        justify-items: center;
+        padding-top: 10px;
+        margin: 1%;
+        
       }
 
       .trip {
+        width: 40%;
+        padding: 10px;
+        margin: 1%;
         display: inline-block;
         text-align: center;
         padding: 0% 0% 1% 0%;
+        border-radius: 5px;
+        box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.6);
       }
+
+      .trip:hover {
+        box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+      }
+
       .trip img {
         width: 70%;
+        padding-top: 10px;
       }
 
       .trip-name {
@@ -137,7 +155,7 @@
       }
 
       .main-footer {
-        position: static;
+        position: relative;
         bottom: 0;
         right: 0;
         left: 0;
@@ -147,8 +165,8 @@
         background-color: #caebf2;
         padding-top: 20px;
         padding-bottom: 10px;
-        height: auto;
-        width: auto;
+        height: 100%;
+        width: 100%;
       }
 
       .main-footer #info {
@@ -271,7 +289,7 @@
         </div>
       </div>
     </section>
-
+    
     <footer class="main-footer">
       <a id="logo" href="https://www.recodepro.org.br">
         <img
