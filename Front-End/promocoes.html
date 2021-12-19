@@ -42,9 +42,11 @@
       .logo {
         margin-right: auto;
       }
+
       nav {
         font-weight: 678;
       }
+
       nav .nav-options {
         list-style: none;
       }
@@ -65,8 +67,89 @@
         opacity: 0.8;
       }
 
+      #title-header {
+        margin: 1% 0% 1% 0%;
+        text-align: center;
+      }
+
+      #title-header hr {
+        border: 0;
+        height: 2px;
+        background-image: linear-gradient(
+          to right,
+          transparent,
+          #999,
+          transparent
+        );
+      }
+
+      .main {
+        display: inline-flex;
+        padding: 1% 3% 1% 3%;
+        width: 100%;
+        height: 100%;
+        justify-content: space-between;
+      }
+
+      .promo {
+        padding: 3%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 16px 14px 20px #0000008c;
+        border-radius: 10px;
+      }
+
+      .promo p {
+        margin: 10px;
+      }
+
+      .promo img {
+        width: 80%;
+      }
+
+      button {
+        border-radius: 5px;
+        padding: 7px 20px 7px 20px;
+        background-color: #caebf2;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+      }
+
+      button:hover {
+        background-color: #ffffff;
+        box-shadow: inset 2px 2px 3px rgba(0, 0, 0, 0.2);
+        text-shadow: none;
+      }
+
+      .info-rj,
+      .info-ba-mg {
+        display: none;
+        padding: 1% 1%;
+        margin: 15px;
+        transform: translate(180%);
+        width: 400px;
+        border: 2px solid;
+        border-radius: 20px;
+        font-size: 18px;
+        text-align: center;
+        background: linear-gradient(90deg, #caebf2, #8c52ff);
+        color: #ffffff;
+      }
+
+      .info-rj p,
+      .info-ba-mg p {
+        padding: 3%;
+      }
+
+      .info-rj span:hover,
+      .info-ba-mg span:hover {
+        color: #8c52ff;
+        opacity: 0.8;
+      }
+
       .main-footer {
-        position: static;
+        position: relative;
         bottom: 0;
         right: 0;
         left: 0;
@@ -76,8 +159,8 @@
         background-color: #caebf2;
         padding-top: 20px;
         padding-bottom: 10px;
-        height: auto;
-        width: auto;
+        height: 100%;
+        width: 100%;
       }
 
       .main-footer #info {
@@ -88,56 +171,142 @@
 
   <!-- cabeçalho do site -->
 
-  <header>
-    <img
-      class="logo"
-      src="Images/Logos/Recode Tourism.svg"
-      alt="Recode Tourism"
-    />
-
-    <nav>
-      <ul class="nav-options">
-        <li>
-          <a href="index.html">Página Inicial</a>
-        </li>
-        <li>
-          <a href="viagens.html">Catálogo</a>
-        </li>
-
-        <li>
-          <a href="promocoes.html">Promoções</a>
-        </li>
-
-        <li>
-          <a href="contato.html">Fale Conosco</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-
   <!-- conteúdo principal do site -->
 
   <body>
-    <h2>Olá, mundo.</h2>
+    <header>
+      <img
+        class="logo"
+        src="Images/Logos/Recode Tourism.svg"
+        alt="Recode Tourism"
+      />
+
+      <nav>
+        <ul class="nav-options">
+          <li>
+            <a href="index.html">Página Inicial</a>
+          </li>
+          <li>
+            <a href="viagens.html">Catálogo</a>
+          </li>
+
+          <li>
+            <a href="promocoes.html">Promoções</a>
+          </li>
+
+          <li>
+            <a href="contato.html">Fale Conosco</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div id="title-header">
+      <h2>
+        Programador consciente sabe a hora certa de aproveitar promoções!
+        <br />
+        Que tal explorar nossas promoções atuais?!
+      </h2>
+      <br />
+      <hr />
+    </div>
+    <section class="main">
+      <div class="promo">
+        <img
+          src="Images/Lugares/paquetá-ilha-grande-promo.svg"
+          alt="Promoção para o RJ - Ilha Grande e Fernando de Noronha"
+        />
+        <p>
+          Já pensou em passar uma temporada nos dois lugares mais cobiçados para
+          se viajar no Rio de Janeiro?
+        </p>
+        <p>
+          Pois agora você pode!
+          <br />
+          Com nossa promoção mais carioca da gema atualmente!
+        </p>
+        <button id="rj-promo" onclick="click(clickRJ)">Ver Mais</button>
+      </div>
+      <div class="promo">
+        <img
+          src="Images/Lugares/poços-de-caldas-ilheus-promo.svg"
+          alt="Promoção MG - BA (Ilhéus e Poços de Caldas)"
+        />
+        <p>
+          Somente conosco você viaja de <strong>MINAS GERAIS</strong> até a
+          <strong>BAHIA!</strong>
+        </p>
+        <button id="ba-mg-promo" onclick="click(clickBAMG)">Ver Mais</button>
+      </div>
+    </section>
+
+    <div class="info-rj">
+      <p>Promoção para você que quer se sentir carioca raíz por alguns dias!</p>
+      <p>Desfrute das praias mais belas do estado do RJ! <br /></p>
+      <p>Pacote Paquetá -> Ilha Grande</p>
+      <p>
+        Desfrute de um descanso merecido nesses dois paraísos cariocas por
+        apenas <span> <strong> R$ 1000!</strong></span>
+      </p>
+      <p>(O pacote inclui hospedagem e comida em ambos os lugares)</p>
+    </div>
+
+    <div class="info-ba-mg">
+      <p>O patrão ficou maluco?! Não mesmo!</p>
+      <p>
+        Só aqui na Recode Tourism a gente leva você de
+        <strong>MINAS GERAIS</strong> até a <strong>BAHIA!</strong><br />
+      </p>
+      <p>Pacote Poços de Caldas -> Ilhéus</p>
+      <p>
+        Desfrute de um descanso merecido nesses dois paraísos brasileiros por
+        apenas <span> <strong> R$ 2500!</strong></span>
+      </p>
+      <p>(O pacote inclui hospedagem, passagem e comida em ambos os lugares)</p>
+    </div>
+
+    <script>
+      let btn_rj = document.getElementById("rj-promo");
+      let btn_ba_mg = document.getElementById("ba-mg-promo");
+      let hidden1 = document.querySelector(".info-rj");
+      let hidden2 = document.querySelector(".info-ba-mg");
+
+      btn_rj.addEventListener("click", function (clickRJ) {
+        if (hidden1.style.display === "none") {
+          hidden1.style.display = "block";
+          hidden2.style.display = "none";
+        } else {
+          hidden1.style.display = "none";
+        }
+      });
+
+      btn_ba_mg.addEventListener("click", function (clickBAMG) {
+        if (hidden2.style.display === "none") {
+          hidden2.style.display = "block";
+          hidden1.style.display = "none";
+        } else {
+          hidden2.style.display = "none";
+        }
+      });
+    </script>
+    <footer class="main-footer">
+      <a id="logo" href="https://www.recodepro.org.br">
+        <img
+          src="Images/Logos/logo-recode-pro-site.png"
+          alt="Recode Logo"
+          width="150px"
+        />
+      </a>
+
+      <h4 align="center" id="info">
+        &copy; Recode Pro Viagens
+
+        <br />
+
+        Todos os direitos reservados.
+      </h4>
+    </footer>
   </body>
 
   <!-- rodapé do site -->
-
-  <footer class="main-footer">
-    <a id="logo" href="https://www.recodepro.org.br">
-      <img
-        src="Images/Logos/logo-recode-pro-site.png"
-        alt="Recode Logo"
-        width="150px"
-      />
-    </a>
-
-    <h4 align="center" id="info">
-      &copy; Recode Pro Viagens
-
-      <br />
-
-      Todos os direitos reservados.
-    </h4>
-  </footer>
 </html>
