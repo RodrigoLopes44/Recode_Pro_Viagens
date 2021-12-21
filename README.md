@@ -1,4 +1,4 @@
-# Recode Viagens
+# Recode Viagens (DESCONTINUADO NESTE REPOSITÓRIO DEVIDO A BUG IRRECONHECÍVEL, CONTINUA NA V2 DO REPO)
 
 ### Atividades de front e back-end para realização do projeto individual do módulo Web.
 
